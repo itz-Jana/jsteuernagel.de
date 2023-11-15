@@ -1,0 +1,57 @@
+# The URL the site will be built for
+base_url = "https://jsteuernagel.de"
+
+author = "Jonatan"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "papermod"
+
+taxonomies = [
+  {name = "tags"},
+]
+
+generate_feed = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+
+[extra.papermod]
+title = "JSteuernagel"
+default_theme = "auto"
+theme = "else"
+language_direction = "auto"
+keywords = ["keyword1", "keyword2", "keyword3"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+default_toc_open = false
+edit_post_url = "https://github.com/cydave/zola-theme-papermod/tree/master"
+#copyright = ""
+date_format = "%Y-%m-%d"
+navigation = [
+    { url = "$BASE_URL/archive", title = "Archive" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+    #{ url = "https://getzola.com/", title = "Zola", is_external = true }
+]
+
+home_title = "JSteuernagel"
+home_content = "Hi 👋<br>I'm Jonatan. I'm interested in technology, photography and the environment.<br>🖥️ My interest in technology was sparked very early on and it has not only increased ever since. I love combining different software together to create something useful.<br><a href=\"https://emojipedia.org/camera/?ref=jsteuernagel.de\">📷</a> I haven't been photographing for as long and am still learning new things every time. By now I know a lot about my camera but I'm still trying to wrap my head around how to properly edit them, especially when it comes to color grading.<br>🌳 In recent years I have started to become increasingly interested in the environment and what is required to avoid damaging it further.<br>Further things I am interested in: 🔒 Privacy, 🏡 Tiny Houses, 💡 Minimalism.<br>If you can relate to any of these points, then feel free to look around my blog. You can also get in touch with me on:"
+social_icons = [
+    { url = "https://github.com/J0n4t4n", title = "GitHub", icon = "github" },
+    { url = "https://social.jsteuernagel.de/@jonatan", title = "Mastodon", icon = "mastodon" },
+    { url = "$BASE_URL/atom.xml", title = "RSS", icon = "rss" },
+]
