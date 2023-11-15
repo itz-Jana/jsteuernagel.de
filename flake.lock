@@ -34,10 +34,27 @@
         "type": "github"
       }
     },
+    "papermod": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1699197270,
+        "narHash": "sha256-B+YTNljDk7GGew/oOZe6CPkCDeGTMjTSDrIYTB30qjg=",
+        "owner": "cydave",
+        "repo": "zola-theme-papermod",
+        "rev": "6dd8c0529dfa6f50812d77f208ea2f836531d9c7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cydave",
+        "repo": "zola-theme-papermod",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "papermod": "papermod"
       }
     },
     "systems": {
