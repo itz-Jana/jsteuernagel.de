@@ -15,9 +15,8 @@
             inherit system;
           };
           themeName = ((builtins.fromTOML (builtins.readFile "${papermod}/theme.toml")).name);
-        in
-        {
-          packages.website = pkgs.stdenv.mkDerivation rec {
+
+          website = pkgs.stdenv.mkDerivation rec {
             name = "jsteuernagel-de-HEAD";
             src = ./.;
             nativeBuildInputs = [ pkgs.zola ];
@@ -28,7 +27,51 @@
             buildPhase = "zola build";
             installPhase = "cp -r public $out";
           };
-          defaultPackage = self.packages.${system}.website;
+
+          nginxPort = "80";
+          nginxConf = pkgs.writeText "nginx.conf" ''
+            user nobody nobody;
+            daemon off;
+            error_log /dev/stdout info;
+            pid /dev/null;
+            events {}
+            http {
+              include ${pkgs.nginx}/conf/mime.types;
+              access_log /dev/stdout;
+              server {
+                listen ${nginxPort};
+                index index.html;
+                location / {
+                  root ${website};
+                }
+              }
+            }
+          '';
+
+          dockerImage = pkgs.dockerTools.buildLayeredImage {
+            name = "jsteuernagel-de";
+            contents = [ pkgs.dockerTools.fakeNss ];
+            extraCommands = ''
+              mkdir -p tmp/nginx_client_body
+              mkdir -p var/log/nginx
+            '';
+            config = {
+              Cmd = [ "${pkgs.nginx}/bin/nginx" "-c" nginxConf ];
+              ExposedPorts = {
+                "${nginxPort}/tcp" = { };
+              };
+            };
+          };
+
+        in
+        {
+          packages = {
+            html = website;
+            docker = dockerImage;
+          };
+
+          defaultPackage = dockerImage;
+
           devShells.default = pkgs.mkShell {
             buildInputs = [ pkgs.zola ];
             shellHook = ''
