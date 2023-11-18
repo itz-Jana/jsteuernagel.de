@@ -39,7 +39,7 @@
               include ${pkgs.nginx}/conf/mime.types;
               access_log /dev/stdout;
               server {
-                listen ${nginxPort};
+                listen [::]:${nginxPort} ipv6only=on;;
                 index index.html;
                 location / {
                   root ${website};
