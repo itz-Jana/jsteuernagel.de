@@ -52,6 +52,6 @@ home_title = "JSteuernagel"
 home_content = "Hi 👋<br>I'm Jonatan. I'm interested in technology, photography and the environment.<br>🖥️ My interest in technology was sparked very early on and it has not only increased ever since. I love combining different software together to create something useful.<br><a href=\"https://emojipedia.org/camera/?ref=jsteuernagel.de\">📷</a> I haven't been photographing for as long and am still learning new things every time. By now I know a lot about my camera but I'm still trying to wrap my head around how to properly edit them, especially when it comes to color grading.<br>🌳 In recent years I have started to become increasingly interested in the environment and what is required to avoid damaging it further.<br>Further things I am interested in: 🔒 Privacy, 🏡 Tiny Houses, 💡 Minimalism.<br>If you can relate to any of these points, then feel free to look around my blog. You can also get in touch with me on:"
 social_icons = [
     { url = "https://github.com/J0n4t4n", title = "GitHub", icon = "github" },
-    { url = "https://social.jsteuernagel.de/@jonatan", title = "Mastodon", icon = "mastodon" },
+    { url = "https://social.jsteuernagel.de/@jana", title = "Mastodon", icon = "mastodon" },
     { url = "$BASE_URL/atom.xml", title = "RSS", icon = "rss" },
 ]
