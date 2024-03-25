@@ -1,0 +1,5 @@
+{
+    "m.server": {
+        "base_url": "matrix.jsteuernagel.de:443"
+    }
+}
