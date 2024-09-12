@@ -27,13 +27,13 @@ This resulted in this installation command.
 ```bash
 export INSTALL_K3S_VERSION=v1.29.3+k3s1
 export INSTALL_K3S_EXEC="\
---disable traefik \
---disable servicelb \
---disable-network-policy \
---flannel-backend=none \
---cluster-cidr=2a01:4f8:a0:1720::1:0/112 \
---kube-controller-manager-arg=node-cidr-mask-size-ipv6=112 \
---service-cidr=2a01:4f8:a0:1720::2:0/112"
+  --disable traefik \
+  --disable servicelb \
+  --disable-network-policy \
+  --flannel-backend=none \
+  --cluster-cidr=2a01:4f8:a0:1720::1:0/112 \
+  --kube-controller-manager-arg=node-cidr-mask-size-ipv6=112 \
+  --service-cidr=2a01:4f8:a0:1720::2:0/112"
 
 curl -sfL https://get.k3s.io | sh -
 ```
