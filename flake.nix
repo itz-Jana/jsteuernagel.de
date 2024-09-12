@@ -71,7 +71,7 @@
           upload-script = pkgs.writeShellScriptBin "upload-image" ''
             set -eu
             OCI_ARCHIVE=$(nix build --no-link --print-out-paths --no-warn-dirty)
-            DOCKER_REPOSITORY="docker://ghcr.io/j0n4t4n/jsteuernagel.de"
+            DOCKER_REPOSITORY="docker://ghcr.io/itz-jana/jsteuernagel.de"
             ${pkgs.skopeo}/bin/skopeo --insecure-policy copy --dest-creds="$GITHUB_USER:$GITHUB_TOKEN" "docker-archive:$OCI_ARCHIVE" "$DOCKER_REPOSITORY"
           '';
 
