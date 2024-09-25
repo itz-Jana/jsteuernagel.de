@@ -1,11 +1,12 @@
 +++
 title = "Why and How I setup my blog with Ghost"
 date = 2020-11-11T06:46:00Z
+description = "OUTDATED: A description of how I setup my old blog using Ghost"
 
 aliases = ["why-and-how-i-setup-my-blog-with-ghost"]
 
 [taxonomies]
-tags = ["Technology","Apple Silicon"]
+tags = ["Technology"]
 +++
 
 Creating this website has been a very long process for me.

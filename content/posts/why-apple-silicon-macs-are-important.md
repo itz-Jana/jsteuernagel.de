@@ -1,6 +1,7 @@
 +++
 title = "Why Apple Silicon Macs are important"
 date = 2020-11-10T09:27:00Z
+description = "My opinion on why Apple's introduction of ARM-based processors will create an important change in the market."
 
 aliases = ["why-apple-silicon-macs-are-important"]
 

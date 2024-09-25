@@ -1,6 +1,7 @@
 +++
 title = "Initial Impressions of the Docker Preview for Apple Silicon"
 date = 2021-01-04T15:43:00Z
+description = "My initial impressions of using the Docker Preview for Apple Silicon."
 
 aliases = ["initial-impressions-of-the-docker-preview-for-apple-silicon"]
 

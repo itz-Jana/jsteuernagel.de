@@ -1,6 +1,7 @@
 +++
 title = "How to configure K3s for IPv6-only operation using Cilium"
 date = 2024-09-12T16:30:00Z
+description = "My setup of a K3s cluster using only IPv6 addressing, internally and externally."
 
 [taxonomies]
 tags = ["Technology","Self-Hosting"]

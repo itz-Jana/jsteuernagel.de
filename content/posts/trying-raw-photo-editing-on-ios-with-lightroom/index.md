@@ -1,6 +1,7 @@
 +++
 title = "Trying RAW photo editing on iOS with Lightroom"
 date = 2020-12-09T16:09:00Z
+description = "My experiences editing RAW photos from my Canon camera in Lightroom on iOS."
 
 aliases = ["trying-raw-photo-editing-on-ios-with-lightroom"]
 

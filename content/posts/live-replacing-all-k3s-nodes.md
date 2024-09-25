@@ -1,6 +1,7 @@
 +++
 title = "Live replacing all K3s master nodes"
 date = 2023-05-13T13:27:00Z
+description = "My experience live replacing all nodes of a K3s cluster"
 
 aliases = ["live-replacing-all-k3s-nodes"]
 

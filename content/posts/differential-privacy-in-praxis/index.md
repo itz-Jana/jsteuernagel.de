@@ -1,6 +1,7 @@
 +++
 title = "Differential Privacy in Praxis"
 date = 2021-05-06T10:06:00Z
+description = "An in-depth look on what Differential Privacy is and how it is implemented with an example from Apple and the U.S. Census."
 
 aliases = ["differential-privacy-in-praxis"]
 

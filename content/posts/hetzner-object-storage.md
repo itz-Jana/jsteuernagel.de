@@ -1,6 +1,7 @@
 +++
 title = "Hetzner Object Storage: Initial Impressions"
 date = 2024-09-24T16:30:00Z
+description = "A summary of my initial findings regarding the Hetzner Object Storage beta. Looking at IPv6, access keys, speed and cost."
 
 [taxonomies]
 tags = ["Technology","Self-Hosting","Object Storage"]

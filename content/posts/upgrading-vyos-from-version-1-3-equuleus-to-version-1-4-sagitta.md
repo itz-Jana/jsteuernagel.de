@@ -1,6 +1,7 @@
 +++
 title = "Upgrading VyOS from Version 1.3 (Equuleus) to Version 1.4 (Sagitta): A Walkthrough of Issues and Resolutions"
 date = 2023-05-20T13:05:00Z
+description = "Issues I encountered while upgrading VyOS 1.3 to 1.4 and how I solved them."
 
 aliases = ["upgrading-vyos-from-version-1-3-equuleus-to-version-1-4-sagitta"]
 
