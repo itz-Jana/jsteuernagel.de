@@ -1,7 +1,9 @@
 # The URL the site will be built for
 base_url = "https://jsteuernagel.de"
 
+title = "Jana"
 author = "Jana"
+description = "My personal blog where about whatever I want, but mainly about my experiments with different technologies."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -27,7 +29,6 @@ highlight_code = true
 
 [extra.papermod]
 title = "Jana"
-description = "My personal blog where about whatever I want, but mainly about my experiments with different technologies."
 default_theme = "auto"
 theme = "else"
 language_direction = "auto"
