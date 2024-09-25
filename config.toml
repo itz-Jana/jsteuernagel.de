@@ -18,7 +18,7 @@ taxonomies = [
 ]
 
 generate_feeds = true
-feed_filenames = [ "atom.xml",]
+feed_filenames = [ "atom.xml" ]
 
 [search]
 # Whether to include the title of the page/section in the index

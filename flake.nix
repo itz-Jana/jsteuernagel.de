@@ -14,7 +14,7 @@
           pkgs = import nixpkgs {
             inherit system;
           };
-          themeName = ((builtins.fromTOML (builtins.readFile "${papermod}/theme.toml")).name);
+          themeName = (nixpkgs.lib.removeSuffix "\n" (builtins.fromTOML (builtins.readFile "${papermod}/theme.toml")).name);
 
           website = pkgs.stdenv.mkDerivation rec {
             name = "jsteuernagel-de-HEAD";
