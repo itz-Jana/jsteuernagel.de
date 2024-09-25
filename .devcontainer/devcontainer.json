@@ -1,0 +1,20 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {
+      "multiUser": true,
+      "version": "latest",
+      // Needed for flakes & nix-direnv:
+      "extraNixConfig": "experimental-features = nix-command flakes,keep-outputs = true,keep-derivations = true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Support for `.nix` files:
+        "jnoortheen.nix-ide"
+      ]
+    }
+  },
+  "remoteUser": "root"
+}
