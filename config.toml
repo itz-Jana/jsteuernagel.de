@@ -27,6 +27,7 @@ highlight_code = true
 
 [extra.papermod]
 title = "Jana"
+description = "My personal blog where about whatever I want, but mainly about my experiments with different technologies."
 default_theme = "auto"
 theme = "else"
 language_direction = "auto"
