@@ -51,7 +51,9 @@ navigation = [
 home_title = "About me"
 home_content = "Hi 👋<br>I'm Jana. I'm very interested in technology and regularly hyperfocus on some nieche topic. My main focus most of the time is around servers and network infrastructure. Yet this blog has no real focus and contains whatever I feel like writing about every once in a while.<br>You can find more about me under the following links. I am most active on Mastodon and regularly write threads about things that really should be their own blog post, but never quite make it."
 social_icons = [
-    { url = "https://github.com/itz-Jana", title = "GitHub", icon = "github" },
     { url = "https://social.jsteuernagel.de/@jana", title = "Mastodon", icon = "mastodon" },
+    { url = "https://github.com/itz-Jana", title = "GitHub", icon = "github" },
+    { url = "https://gitea.jsteuernagel.de/jana", title = "Gitea", icon = "gitea" },
+    { url = "https://anilist.co/user/ItzJana/", title = "Anilist", icon = "anilist" },
     { url = "$BASE_URL/atom.xml", title = "RSS", icon = "rss" },
 ]
