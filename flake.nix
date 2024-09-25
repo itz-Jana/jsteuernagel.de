@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    papermod = { url = "github:cydave/zola-theme-papermod"; flake = false; };
+    papermod = { url = "github:itz-Jana/zola-theme-papermod"; flake = false; };
   };
   outputs = { self, nixpkgs, flake-utils, papermod }:
     flake-utils.lib.eachDefaultSystem
