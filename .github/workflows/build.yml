@@ -12,7 +12,7 @@ jobs:
     permissions:
       packages: write
     steps:
-    - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
     - uses: cachix/install-nix-action@d56f3ce9be45c562799280e8a561fbbe8f36de44 # v16
       with:
         extra_nix_config: |
