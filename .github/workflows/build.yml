@@ -12,8 +12,8 @@ jobs:
     permissions:
       packages: write
     steps:
-    - uses: actions/checkout@v2.4.0
-    - uses: cachix/install-nix-action@v16
+    - uses: actions/checkout@ec3a7ce113134d7a93b817d10a8272cb61118579 # v2.4.0
+    - uses: cachix/install-nix-action@d56f3ce9be45c562799280e8a561fbbe8f36de44 # v16
       with:
         extra_nix_config: |
           access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
