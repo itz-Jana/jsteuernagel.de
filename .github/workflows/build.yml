@@ -1,6 +1,9 @@
 name: Build Container
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -20,4 +23,4 @@ jobs:
       env:
         GITHUB_USER: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      if: github.ref == 'refs/heads/main'
+      #if: github.ref == 'refs/heads/main'
