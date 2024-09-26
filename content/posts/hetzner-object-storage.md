@@ -69,3 +69,14 @@ But if the service ends up performing well, I don't see that being an issue and 
 At first glance everything seems to be working really well.
 I just took the gamble and moved the media cache of my [Mastodon instance](https://social.jsteuernagel.de/@jana) over to Hetzner Object Storage, so I will see if any problems with it arise in the coming days.
 I also intend to do some more experiments with NixOS Binary Caches and maybe HLS Live Streaming to see how low the latency is.
+
+## Update: Issue 1
+
+I initially created my Mastodon bucket as public, because for Mastodon that's necessary.
+But after a day, I saw that some of the images from my instance were disappearing.
+I realized that the ones that were still there, were still in my CloudFront cache and that every access to Hetzner was giving me an "AccessDenied" error.
+
+I checked the visibility via the `mc` CLI and surprisingly it was now set to private.
+I don't know why or how the value changed, but simply setting it back to public fixed my issue.
+
+I will continue to look out of this happens again with any of my tests.
