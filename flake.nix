@@ -81,6 +81,18 @@
                   proxy_set_header X-Forwarded-For $remote_addr;
                   proxy_ssl_server_name on;
                 }
+                location /.well-known/webfinger {
+                  return 200 "{
+  "subject": "acct:jana@jsteuernagel.de",
+  "links": [
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://gitea.jsteuernagel.de"
+    }
+  ]
+}
+";
+                }
               }
             }
           '';
