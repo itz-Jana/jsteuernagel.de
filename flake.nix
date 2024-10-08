@@ -93,7 +93,7 @@
 
           dockerImage = pkgs.dockerTools.buildLayeredImage {
             name = "jsteuernagel-de";
-            contents = [ pkgs.dockerTools.fakeNss ];
+            contents = [ pkgs.dockerTools.fakeNss pkgs.dockerTools.binSh ];
             extraCommands = ''
               mkdir -p tmp/nginx_client_body
               mkdir -p var/log/nginx
