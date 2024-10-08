@@ -72,14 +72,20 @@
                   text/plain
                   text/xml;
 
-                location / {
-                  root ${website};
+                location ~ /\.(?!well-known).* {
+                  deny all;
+                  access_log off;
+                  log_not_found off;
+                  return 404;
                 }
                 location /.well-known/matrix {
                   resolver [2606:4700:4700::1111]:53 valid=30s;
                   proxy_pass https://matrix.jsteuernagel.de/.well-known/matrix;
                   proxy_set_header X-Forwarded-For $remote_addr;
                   proxy_ssl_server_name on;
+                }
+                location / {
+                  root ${website};
                 }
               }
             }
