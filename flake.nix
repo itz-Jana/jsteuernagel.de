@@ -72,6 +72,11 @@
                   text/plain
                   text/xml;
 
+                add_header X-Frame-Options "DENY";
+                add_header X-Content-Type-Options "nosniff";
+                add_header Content-Security-Policy "default-src 'none'; style-src 'self'; img-src 'self'; media-src 'self'; prefetch-src 'self'; upgrade-insecure-requests; block-all-mixed-content; sandbox; base-uri 'self'";
+                add_header Referrer-Policy "no-referrer";
+
                 location ~ /\.(?!well-known).* {
                   deny all;
                   access_log off;
