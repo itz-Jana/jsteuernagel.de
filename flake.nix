@@ -74,7 +74,7 @@
 
                 add_header X-Frame-Options "DENY";
                 add_header X-Content-Type-Options "nosniff";
-                add_header Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; upgrade-insecure-requests; sandbox allow-scripts; base-uri 'self'";
+                add_header Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; style-src-attr 'self' 'unsafe-inline'; img-src 'self'; media-src 'self'; upgrade-insecure-requests; sandbox allow-scripts; base-uri 'self'";
                 add_header Referrer-Policy "no-referrer";
 
                 location ~ /\.(?!well-known).* {

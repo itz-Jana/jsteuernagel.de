@@ -37,11 +37,11 @@
     "papermod": {
       "flake": false,
       "locked": {
-        "lastModified": 1744572188,
-        "narHash": "sha256-EeC2o8cpX8y8VP9wwGsIOBZgaKa9j7KK0rHP7YMmAao=",
+        "lastModified": 1744573519,
+        "narHash": "sha256-6eHJnp9a7klxR5iqbnU7VYCRjGXzIWQo+chLaW1pnKw=",
         "owner": "itz-Jana",
         "repo": "zola-theme-papermod",
-        "rev": "de689a60851b2d71eacfbc78906df9f4b219b205",
+        "rev": "69ddd15ad36c8b4cc251c5cd07c7367fab9de677",
         "type": "github"
       },
       "original": {
