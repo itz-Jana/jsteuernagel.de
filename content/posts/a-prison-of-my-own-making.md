@@ -7,7 +7,7 @@ description = "Killing the joy of homelabbing with my own expectation"
 tags = ["Technology","Self-Hosting"]
 +++
 
-Yesterday I realized something:
+[Yesterday I realized something](https://social.jsteuernagel.de/@jana/114768460919053583):
 **I've built myself into a prison and didn't realize it.**
 
 Let me explain:
