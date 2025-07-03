@@ -1,6 +1,6 @@
 +++
 title = "A prison of my own making"
-date = 2025-07-30T12:00:00Z
+date = 2025-06-30T12:00:00Z
 description = "Killing the joy of homelabbing with my own expectation"
 
 [taxonomies]
